@@ -1,0 +1,45 @@
+@import '../scss/fonts';
+
+html {
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.top-header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.title {
+   font-family: $title;
+   font-size: 5rem;
+}
+
+.buttons {
+   display: inline-grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 2rem;
+   width: 100%;
+}
+
+.button-img {
+   height: 200px;
+   width: 200px;
+}
+
+.rock,
+.paper,
+.scissors {
+   border: 5px solid #000;
+   border-radius: 300px;
+   justify-content: center;
+   text-align: center;
+}
+

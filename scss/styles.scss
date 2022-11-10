@@ -1,5 +1,3 @@
-@import '../scss/fonts';
-
 html {
    height: 100%;
 }
@@ -7,39 +5,119 @@ html {
 body {
    margin: 0;
    padding: 0;
-   box-sizing: border-box;
-}
-
-.top-header {
+   background: linear-gradient(#020202, #4b4949);
+   color: white;
+   height: 100%;
    display: flex;
-   justify-content: center;
    align-items: center;
    flex-direction: column;
+   font-family: monospace;
 }
 
-.title {
-   font-family: $title;
-   font-size: 5rem;
+p {
+ margin: 0;
+ padding: 0;
+ }
+
+ a {
+   color: white;
+ }
+
+
+#title {
+   padding: 20px 0;
+   font-size: 36px;
 }
 
-.buttons {
-   display: inline-grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-gap: 2rem;
-   width: 100%;
+
+#intro {
+   margin-bottom: 30px;
 }
 
-.button-img {
-   height: 200px;
-   width: 200px;
-}
-
-.rock,
-.paper,
-.scissors {
-   border: 5px solid #000;
-   border-radius: 300px;
-   justify-content: center;
+#rules {
+   width: 895px;
+   font-size: 22px;
+   font-weight: bold;
+   color: rgb(139, 156, 235);
+   font-family: monospace;
    text-align: center;
-}
+ }
+
+ #buttons {
+   padding: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+ }
+
+ #button-img {
+   width: 90px;
+   height: 90px;
+   border-radius:20%;
+ }
+ 
+ #rock, #paper, #scissors {
+   width: 145px;
+   height: 145px;
+   border-radius:50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   font-size: 18px;
+   font-weight: bold;
+   border-style: solid;
+   border-color: rgb(233, 62, 219);
+   &:hover {      
+      border-radius: 10px;
+      border-color: rgb(145, 110, 228);
+      transition: border-radius 0.1s;
+   }
+ }
+
+ #scores {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 60px;
+   font-size: 20px;
+   font-weight: bold;
+   margin-top: 20px;
+ }
+
+ #commentary {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 30px;
+   font-size: 25px;
+   font-weight: bold;
+ }
+
+ #reset {
+   font-size: 18px;
+   margin-top: 50px;
+   cursor: pointer;
+ }
+
+ .reset-focus {
+   cursor: pointer;
+   margin-top: 50px;
+   font-size: 40px;
+   color: #fff;
+   text-align: center;
+ }
+ 
+//   #footer {
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//    font-size: 12px;
+//    margin-top: auto;
+//    height: 30px;
+//  }
+
+
+
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,42 @@
    <link rel="stylesheet" href="styles.css">
    <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-      <div class="top-header">
-         <h1 class="title">Rock Paper Scissors</h1>
-         <div class="title-img">
-            <img src="/assets/images/title.png" alt="Rock Paper Scissors">
-         </div>
-      </div>
-   <div class="buttons">
-      <div class="rock">
-         <img src="/assets/images/rock.png" alt="Rock" class="button-img">
+   <div id="title">Rock Paper Scissors</div>
+   <div id="intro">
+      <p id="rules">First to 5 wins.</p>
+   </div>
+
+   <div id="buttons">
+      <div id="rock">
+         <img src="./assets/images/rock1.png" id="button-img" class="">
          <p>Rock</p>
       </div>
-      <div class="paper">
-         <img src="/assets/images/paper.png" alt="Paper" class="button-img">
+      <div id="paper">
+         <img src="./assets/images/paper2.png" id="button-img" class="">
          <p>Paper</p>
       </div>
-      <div class="scissors">
-         <img src="/assets/images/scissors.png" alt="Scissors" class="button-img">
+      <div id="scissors">
+         <img src="./assets/images/scissors1.png" id="button-img" class="">
          <p>Scissors</p>
       </div>
    </div>
-   <div class="results">
-      <div id="score">
+
+   <div id="outputs">
+      <div id="scores">
          <p id="player"></p>
          <p id="computer"></p>
       </div>
-      <div id="result-comments">
-         <div id="comments"></div>
+      <div id="commentary">
+         <p id="comment"></p>
       </div>
    </div>
-   <div id="reset">Reset Game</div>
+
+   <div id="reset">Reset</div>
+
 
    <script src="/script.js"></script>
 </body>
+
 </html>

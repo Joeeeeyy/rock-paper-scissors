@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#020202, #4b4949);
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: monospace;
+}
+
+.title {
+  padding: 20px 0;
+  font-size: 36px;
+}
+
+/*# sourceMappingURL=styles.css.map */
